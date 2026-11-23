@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OKB Distribuidora | Produtos de Limpeza e Higiene Profissional</title>
+  <meta name="description" content="OKB Distribuidora: produtos de limpeza profissional, higiene, descartáveis, EPIs e utensílios. Qualidade, variedade e o melhor atendimento. Peça seu orçamento pelo WhatsApp." />
+  <meta property="og:title" content="OKB Distribuidora — Limpeza profissional com mais eficiência!" />
+  <meta property="og:description" content="Catálogo completo de produtos de limpeza e higiene. Peça seu orçamento pelo WhatsApp." />
+  <meta property="og:image" content="assets/img/produtos/okb-institucional.jpg" />
+  <meta name="theme-color" content="#0a3d8f" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== ÍCONES (sprite) ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+      <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></symbol>
+      <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></symbol>
+      <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8.5V6.8c0-.8.5-1 1-1h2.4V2.1L14.1 2C10.5 2 9.7 4.6 9.7 6.3v2.2H7.5v3.8h2.2V22H14v-9.7h3l.4-3.8z"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="6" cy="18" r="2" fill="#fff" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="18" r="2" fill="#fff" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="14" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 9.2L6 2h4l2 5 2-5h4l-2.5 7.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 11.5l.9 1.8 2 .3-1.4 1.4.3 2-1.8-1-1.8 1 .3-2-1.4-1.4 2-.3z" fill="currentColor"/></symbol>
+      <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.6" fill="currentColor"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 10h8M8 13h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <!-- categorias -->
+      <symbol id="c-spray" viewBox="0 0 24 24"><path d="M8 9h6v12H6V11a2 2 0 0 1 2-2zM9 9V6h4v3M13 6h3l2-2M17 7.5h3M17 10l2.5 1" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="c-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.6-3.4 8.2-8 9-4.6-.8-8-4.4-8-9V6z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="c-chef" viewBox="0 0 24 24"><path d="M7 14a4 4 0 0 1-.6-7.9A5 5 0 0 1 16 4.5a4 4 0 0 1 1 9.4V20H7z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M7 17h10" stroke="currentColor" stroke-width="1.9"/></symbol>
+      <symbol id="c-hand" viewBox="0 0 24 24"><path d="M12 3c2 2.6 3.5 4.6 3.5 6.5a3.5 3.5 0 0 1-7 0C8.5 7.6 10 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M3 15h4l3 1.5h4a1.5 1.5 0 0 1 0 3H9.5M14 18l5-2.5a1.5 1.5 0 0 1 1.5 2.5L14 21H3" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="c-roll" viewBox="0 0 24 24"><ellipse cx="8" cy="9" rx="4.5" ry="5.5" fill="none" stroke="currentColor" stroke-width="1.9"/><ellipse cx="8" cy="9" rx="1.5" ry="2" fill="currentColor"/><path d="M8 3.5h9c2.5 0 4.5 2.5 4.5 5.5S19.5 14.5 17 14.5h-1V21H8v-6.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+      <symbol id="c-glove" viewBox="0 0 24 24"><path d="M7 21v-5L4.5 12a1.6 1.6 0 0 1 2.6-1.8L8 11.5V5a1.5 1.5 0 0 1 3 0v5V4a1.5 1.5 0 0 1 3 0v6V5a1.5 1.5 0 0 1 3 0v6.5V8a1.5 1.5 0 0 1 3 0v7c0 3-2 4.5-3 6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+      <symbol id="c-broom" viewBox="0 0 24 24"><path d="M20 3l-8 8M9 10.5l4.5 4.5c-.8 3.5-3.5 6-8.5 6.5-.5 0-1-.5-.9-1 .5-5 3-7.6 6.4-8.5z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 19l3-3M8.5 20.5l2-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+      <symbol id="c-box" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M9 7h6M12 14v4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><circle cx="12" cy="11.5" r="1.4" fill="currentColor"/></symbol>
+      <symbol id="c-shirt" viewBox="0 0 24 24"><path d="M8 3l-5 3 2 4 2-1v12h10V9l2 1 2-4-5-3c-.5 1.5-2 2.5-4 2.5S8.5 4.5 8 3z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+      <symbol id="c-flower" viewBox="0 0 24 24"><circle cx="12" cy="9" r="2.2" fill="currentColor"/><path d="M12 6.8c0-2.5 1-3.8 0-4.8-1 1 0 2.3 0 4.8zM12 9c-3-3-5.5-3-6-1.5S9 9 12 9zm0 0c3-3 5.5-3 6-1.5S15 9 12 9zm0 0c-2 3-4 4.5-5 3.5S9 9.5 12 9zm0 0c2 3 4 4.5 5 3.5S15 9.5 12 9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 12v9M12 17c-2-2-4-2-5-1.5M12 18.5c2-2 4-2 5-1.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+      <!-- logo globo -->
+      <symbol id="logo-globe" viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="27" fill="#0a3d8f"/>
+        <g fill="#fff">
+          <circle cx="30" cy="9" r="2"/><circle cx="21" cy="11" r="1.8"/><circle cx="39" cy="11" r="1.8"/><circle cx="13" cy="17" r="1.6"/><circle cx="47" cy="17" r="1.6"/>
+          <circle cx="24" cy="18" r="2.3"/><circle cx="36" cy="18" r="2.3"/><circle cx="30" cy="17" r="2.4"/>
+          <circle cx="9" cy="26" r="1.6"/><circle cx="17" cy="26" r="2.2"/><circle cx="25" cy="27" r="2.6"/><circle cx="35" cy="27" r="2.6"/><circle cx="43" cy="26" r="2.2"/><circle cx="51" cy="26" r="1.6"/>
+          <circle cx="12" cy="35" r="1.8"/><circle cx="20" cy="36" r="2.4"/><circle cx="30" cy="36" r="2.7"/><circle cx="40" cy="36" r="2.4"/><circle cx="48" cy="35" r="1.8"/>
+          <circle cx="17" cy="44" r="1.8"/><circle cx="25" cy="45" r="2.2"/><circle cx="35" cy="45" r="2.2"/><circle cx="43" cy="44" r="1.8"/>
+          <circle cx="24" cy="52" r="1.5"/><circle cx="30" cy="53" r="1.7"/><circle cx="36" cy="52" r="1.5"/>
+        </g>
+        <path d="M5 36c10 7 35 8 52-4" stroke="#fff" stroke-width="3" fill="none" opacity=".9"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ===== TOPBAR ===== -->
+  <div class="topbar">
+    <div class="container topbar__in">
+      <span><svg><use href="#i-clock"/></svg><span data-cfg="horario"></span></span>
+      <span class="topbar__right">
+        <a data-whats href="#" target="_blank" rel="noopener"><svg><use href="#i-whats"/></svg><span data-cfg="telefoneExibicao"></span></a>
+        <a data-cfg-href="facebook" href="#" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg>Facebook</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="topo">
+    <div class="container header__in">
+      <a href="#topo" class="logo" aria-label="OKB Distribuidora">
+        <svg class="logo__globe"><use href="#logo-globe"/></svg>
+        <span class="logo__txt"><b>OKB<i>.</i></b><small>DISTRIBUIDORA</small></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#categorias">Categorias</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#mais-vendidos">Mais vendidos</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="header__actions">
+        <button class="icon-btn" data-goto-search aria-label="Buscar produtos"><svg><use href="#i-search"/></svg></button>
+        <button class="btn btn--green btn--cart" id="openCart" aria-label="Abrir lista de orçamento">
+          <svg><use href="#i-cart"/></svg><span class="hide-sm">Orçamento</span><span class="badge" id="cartCount">0</span>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu"><svg><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="container hero__in">
+      <div class="hero__copy">
+        <span class="slogan">Qualidade, variedade e o melhor atendimento!</span>
+        <h1>Produtos de <span>limpeza e higiene</span> para o seu dia a dia!</h1>
+        <p>Aqui você encontra tudo o que precisa para sua casa, comércio ou empresa — com qualidade, variedade e preço justo. Limpeza profissional com mais eficiência!</p>
+
+        <form class="hero__search" id="heroSearch" role="search">
+          <svg><use href="#i-search"/></svg>
+          <input type="search" id="heroQ" placeholder="Busque por produto, marca ou uso… ex: desengordurante" autocomplete="off" />
+          <button class="btn btn--green" type="submit">Buscar</button>
+          <div class="suggest" id="suggest" hidden></div>
+        </form>
+        <div class="hero__tags">
+          <span>Populares:</span>
+          <button data-q="desengordurante">Desengordurante</button>
+          <button data-q="luva">Luvas</button>
+          <button data-q="papel">Papel higiênico</button>
+          <button data-q="desinfetante">Desinfetante</button>
+          <button data-q="álcool">Álcool 70%</button>
+        </div>
+
+        <div class="hero__stats">
+          <div><b id="statProd">0</b><span>produtos</span></div>
+          <div><b id="statMarcas">0</b><span>marcas</span></div>
+          <div><b id="statCats">0</b><span>categorias</span></div>
+        </div>
+      </div>
+
+      <div class="hero__art">
+        <div class="hero__card hero__card--back"><img src="assets/img/produtos/clearon.jpg" alt="" loading="lazy"></div>
+        <div class="hero__card hero__card--mid"><img src="assets/img/produtos/limmais-grill.jpg" alt="" loading="lazy"></div>
+        <div class="hero__card hero__card--front"><img src="assets/img/produtos/seven-free.jpg" alt="Seven Free Desengordurante — OKB Distribuidora"></div>
+        <div class="hero__seal"><svg><use href="#i-check"/></svg><span>Qualidade<br><b>OKB</b></span></div>
+      </div>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 70 C 360 130 760 0 1440 60 L1440 120 L0 120Z" fill="#43b02a"/>
+      <path d="M0 88 C 380 140 800 20 1440 80 L1440 120 L0 120Z" fill="#fff"/>
+    </svg>
+  </section>
+
+  <!-- ===== BENEFÍCIOS ===== -->
+  <section class="benefits container">
+    <div class="benefit"><span class="benefit__ic"><svg><use href="#i-medal"/></svg></span><div><b>Produtos de qualidade</b><small>Marcas líderes do mercado profissional</small></div></div>
+    <div class="benefit"><span class="benefit__ic"><svg><use href="#i-truck"/></svg></span><div><b>Entrega rápida e segura</b><small>Seu pedido chega no prazo</small></div></div>
+    <div class="benefit"><span class="benefit__ic"><svg><use href="#i-tag"/></svg></span><div><b>Melhores preços</b><small>Condições especiais para empresas</small></div></div>
+    <div class="benefit"><span class="benefit__ic"><svg><use href="#i-chat"/></svg></span><div><b>Atendimento personalizado</b><small>Orçamento direto no WhatsApp</small></div></div>
+  </section>
+
+  <!-- ===== CATEGORIAS ===== -->
+  <section class="section" id="categorias">
+    <div class="container">
+      <div class="section__head">
+        <span class="kicker">Encontre rápido</span>
+        <h2>Navegue por <em>categorias</em></h2>
+      </div>
+      <div class="cats" id="cats"></div>
+    </div>
+  </section>
+
+  <!-- ===== DESTAQUES ===== -->
+  <section class="section section--blue" id="destaques">
+    <div class="container">
+      <div class="section__head section__head--light">
+        <span class="kicker">Vitrine OKB</span>
+        <h2>Linha <em>profissional</em> em destaque</h2>
+        <p>Soluções completas para cozinhas industriais, restaurantes, hospitais, condomínios e empresas.</p>
+      </div>
+      <div class="showcase">
+        <button class="showcase__nav prev" aria-label="Anterior"><svg><use href="#i-arrow"/></svg></button>
+        <div class="showcase__track" id="showcase"></div>
+        <button class="showcase__nav next" aria-label="Próximo"><svg><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAIS VENDIDOS ===== -->
+  <section class="section" id="mais-vendidos">
+    <div class="container">
+      <div class="section__head">
+        <span class="kicker">Os favoritos dos clientes</span>
+        <h2>Mais <em>vendidos</em></h2>
+      </div>
+      <div class="grid" id="topGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== CATÁLOGO ===== -->
+  <section class="section section--soft" id="catalogo">
+    <div class="container">
+      <div class="section__head">
+        <span class="kicker">Catálogo completo</span>
+        <h2>Procure seu <em>produto</em></h2>
+      </div>
+
+      <div class="filters">
+        <label class="filters__search">
+          <svg><use href="#i-search"/></svg>
+          <input type="search" id="q" placeholder="Buscar produto, marca, tamanho…" autocomplete="off" />
+        </label>
+        <select id="brand" aria-label="Filtrar por marca"><option value="">Todas as marcas</option></select>
+        <select id="sort" aria-label="Ordenar">
+          <option value="relev">Relevância</option>
+          <option value="az">Nome A–Z</option>
+          <option value="za">Nome Z–A</option>
+          <option value="marca">Marca</option>
+        </select>
+      </div>
+      <div class="chips" id="chips"></div>
+      <p class="result-info" id="resultInfo"></p>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <svg><use href="#i-search"/></svg>
+        <h3>Nenhum produto encontrado</h3>
+        <p>Não achou o que procura? Fale com a gente — trabalhamos com muitos outros itens sob encomenda.</p>
+        <a class="btn btn--green" data-whats data-msg="Olá! Não encontrei um produto no site, vocês trabalham com:" href="#" target="_blank" rel="noopener"><svg><use href="#i-whats"/></svg>Perguntar no WhatsApp</a>
+      </div>
+      <div class="more"><button class="btn btn--outline" id="loadMore">Ver mais produtos</button></div>
+    </div>
+  </section>
+
+  <!-- ===== SEGMENTOS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="kicker">Quem atendemos</span>
+        <h2>Soluções para <em>cada segmento</em></h2>
+      </div>
+      <div class="segments">
+        <div class="segment"><svg><use href="#c-chef"/></svg><b>Restaurantes e cozinhas industriais</b><small>Desengordurantes, detergentes para máquina, Lim+ Grill</small></div>
+        <div class="segment"><svg><use href="#c-shield"/></svg><b>Hospitais e clínicas</b><small>Desinfetantes, Peroxy Guard, EPIs e descartáveis</small></div>
+        <div class="segment"><svg><use href="#c-broom"/></svg><b>Condomínios e empresas</b><small>Limpeza geral, papéis, sacos de lixo e utensílios</small></div>
+        <div class="segment"><svg><use href="#c-box"/></svg><b>Indústrias e frigoríficos</b><small>Foam, Flotador, aventais e luvas de proteção</small></div>
+        <div class="segment"><svg><use href="#c-hand"/></svg><b>Escolas e universidades</b><small>Sabonetes, álcool gel, dispensers e higiene</small></div>
+        <div class="segment"><svg><use href="#c-roll"/></svg><b>Supermercados e comércio</b><small>Bobinas, sacolas, descartáveis e limpeza</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA / CONTATO ===== -->
+  <section class="cta" id="contato">
+    <div class="container cta__in">
+      <div>
+        <span class="slogan slogan--light">Seu ambiente sempre limpo e bem cuidado!</span>
+        <h2>Monte sua lista e receba seu orçamento pelo WhatsApp</h2>
+        <p>Adicione os produtos ao orçamento, envie com um clique e nossa equipe responde com preços e prazos.</p>
+        <ul class="contact-list">
+          <li><svg><use href="#i-whats"/></svg><a data-whats href="#" target="_blank" rel="noopener" data-cfg="telefoneExibicao"></a></li>
+          <li><svg><use href="#i-mail"/></svg><a data-cfg-href="email" data-mailto href="#" data-cfg="email"></a></li>
+          <li><svg><use href="#i-pin"/></svg><span data-cfg="endereco"></span></li>
+          <li><svg><use href="#i-clock"/></svg><span data-cfg="horario"></span></li>
+        </ul>
+      </div>
+      <div class="cta__actions">
+        <a class="btn btn--green btn--lg" data-whats href="#" target="_blank" rel="noopener"><svg><use href="#i-whats"/></svg>Fale com a gente</a>
+        <a class="btn btn--fb btn--lg" data-cfg-href="facebook" href="#" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg>Siga no Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__in">
+      <a href="#topo" class="logo logo--light">
+        <svg class="logo__globe"><use href="#logo-globe"/></svg>
+        <span class="logo__txt"><b>OKB<i>.</i></b><small>DISTRIBUIDORA</small></span>
+      </a>
+      <p>Limpeza profissional com mais eficiência! © <span id="year"></span> OKB Distribuidora.</p>
+      <p class="footer__note">Imagens ilustrativas. Consulte disponibilidade e condições pelo WhatsApp.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a class="float-whats" data-whats href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-whats"/></svg></a>
+
+  <!-- ===== MODAL PRODUTO ===== -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__bg" data-close></div>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <button class="modal__close" data-close aria-label="Fechar"><svg><use href="#i-x"/></svg></button>
+      <div class="modal__media" id="mMedia"></div>
+      <div class="modal__body">
+        <span class="pill" id="mCat"></span>
+        <h3 id="mTitle"></h3>
+        <p class="modal__brand">Marca: <b id="mBrand"></b></p>
+        <p id="mDesc"></p>
+        <div class="modal__actions">
+          <button class="btn btn--blue" id="mAdd"><svg><use href="#i-plus"/></svg>Adicionar ao orçamento</button>
+          <a class="btn btn--green" id="mWhats" href="#" target="_blank" rel="noopener"><svg><use href="#i-whats"/></svg>Pedir agora</a>
+        </div>
+        <div class="modal__related" id="mRelated"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== DRAWER ORÇAMENTO ===== -->
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__bg" data-close-cart></div>
+    <div class="drawer__panel">
+      <div class="drawer__head">
+        <h3><svg><use href="#i-cart"/></svg>Lista de orçamento</h3>
+        <button class="icon-btn" data-close-cart aria-label="Fechar"><svg><use href="#i-x"/></svg></button>
+      </div>
+      <div class="drawer__list" id="cartList"></div>
+      <div class="drawer__foot">
+        <label class="drawer__label">Seu nome / empresa (opcional)
+          <input type="text" id="cartName" placeholder="Ex.: Restaurante Sabor Bom" />
+        </label>
+        <a class="btn btn--green btn--block" id="sendCart" href="#" target="_blank" rel="noopener"><svg><use href="#i-whats"/></svg>Enviar orçamento no WhatsApp</a>
+        <button class="btn btn--ghost btn--block" id="clearCart"><svg><use href="#i-trash"/></svg>Limpar lista</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/produtos.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
