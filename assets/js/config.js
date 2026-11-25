@@ -9,9 +9,9 @@ window.OKB_CONFIG = {
   email: "contato@okbdistribuidora.com.br",
   facebook: "https://www.facebook.com/profile.php?id=61595990270656",
   // >>> COLOQUE o link do Instagram (ex.: "https://www.instagram.com/okbdistribuidora") <<<
-  instagram: "",
+  instagram: "https://www.instagram.com/okb_brasil/",
   // >>> COLOQUE o CNPJ (ex.: "00.000.000/0001-00") <<<
-  cnpj: "",
+  cnpj: "17.446.921/0001-85",
   razaoSocial: "OKB Distribuidora",
   endereco: "Atendemos empresas, condomínios, restaurantes, indústrias e hospitais",
   horario: "Seg a Sex • 08h às 18h",
