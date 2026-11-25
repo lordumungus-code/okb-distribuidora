@@ -22,8 +22,21 @@
   $$("[data-cfg]").forEach(el => (el.textContent = CFG[el.dataset.cfg] || ""));
   $$("[data-cfg-href]").forEach(el => {
     const v = CFG[el.dataset.cfgHref];
+    if (!v) { (el.closest("[data-ig-item]") || el).hidden = true; return; }
     el.href = el.hasAttribute("data-mailto") ? `mailto:${v}` : v;
   });
+  const cnpjEl = $("[data-cnpj]");
+  if (CFG.cnpj) cnpjEl.textContent = `CNPJ: ${CFG.cnpj}`; else cnpjEl.hidden = true;
+
+  // logo oficial (assets/img/logo.png): se o arquivo existir, substitui o logo desenhado
+  if (CFG.logo) {
+    const test = new Image();
+    test.onload = () => {
+      $$(".logo").forEach(l => (l.innerHTML = `<img class="logo__img" src="${esc(CFG.logo)}" alt="OKB Distribuidora">`));
+      const fav = $('link[rel="icon"]'); fav.href = CFG.logo; fav.type = "image/png";
+    };
+    test.src = CFG.logo;
+  }
   $$("[data-whats]").forEach(el => (el.href = whatsURL(el.dataset.msg || "Olá, OKB Distribuidora! Vim pelo site e gostaria de um orçamento.")));
   $("#year").textContent = new Date().getFullYear();
 

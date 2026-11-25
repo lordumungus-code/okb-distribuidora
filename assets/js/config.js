@@ -4,12 +4,17 @@
 // ===============================================
 window.OKB_CONFIG = {
   // WhatsApp no formato internacional, só números: 55 + DDD + número
-  // >>> TROQUE pelo número real da empresa <<<
-  whatsapp: "5512992192346",
-  telefoneExibicao: "(12) 99219-2346",
+  whatsapp: "5512992013447",
+  telefoneExibicao: "(12) 99201-3447",
   email: "contato@okbdistribuidora.com.br",
   facebook: "https://www.facebook.com/profile.php?id=61595990270656",
+  // >>> COLOQUE o link do Instagram (ex.: "https://www.instagram.com/okbdistribuidora") <<<
   instagram: "",
+  // >>> COLOQUE o CNPJ (ex.: "00.000.000/0001-00") <<<
+  cnpj: "",
+  razaoSocial: "OKB Distribuidora",
   endereco: "Atendemos empresas, condomínios, restaurantes, indústrias e hospitais",
-  horario: "Seg a Sex • 08h às 18h"
+  horario: "Seg a Sex • 08h às 18h",
+  // Logo oficial: salve o arquivo em assets/img/logo.png que o site usa automaticamente
+  logo: "assets/img/logo.png"
 };

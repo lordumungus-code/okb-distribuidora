@@ -389,3 +389,35 @@ mark { background: #d9f4cf; color: inherit; border-radius: 3px; padding: 0 2px; 
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* ---------- v2: fotos reais dos produtos, logo, Instagram, CNPJ ---------- */
+.card__media { background: #fff; border-bottom: 1px solid var(--line); }
+.card__media img { object-fit: contain; object-position: center; padding: 10px; }
+.flyer__img { background: #fff; aspect-ratio: 1 / 1; }
+.flyer__img img { object-fit: contain; object-position: center; padding: 14px; }
+.hero__card img { object-fit: contain; padding: 10px; }
+.hero__card--front, .hero__card--mid, .hero__card--back { height: auto; aspect-ratio: 1 / 1; }
+.ci__thumb { background: #fff; border: 1px solid var(--line); }
+.ci__thumb img { object-fit: contain; object-position: center; }
+.suggest .s-thumb { background: #fff; border: 1px solid var(--line); }
+.suggest .s-thumb img { object-fit: contain; object-position: center; }
+.modal__media img { padding: 20px; }
+.logo__img { height: 54px; width: auto; display: block; }
+.logo--light .logo__img { background: #fff; border-radius: 12px; padding: 6px 10px; height: 60px; }
+.btn--ig { background: linear-gradient(45deg, #f9ce34, #ee2a7b 50%, #6228d7); color: #fff; }
+.footer__info { display: grid; gap: 4px; }
+.footer__cnpj { font-size: .85rem; opacity: .85; }
+.footer__social { display: flex; gap: 10px; }
+.footer__social a { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: rgba(255, 255, 255, .1); color: #fff; transition: background .2s; }
+.footer__social a:hover { background: var(--green); }
+@media (max-width: 600px) { .logo__img { height: 44px; } }
+
+/* logo no estilo da identidade OKB */
+.logo__txt b { font-family: "Oswald", "Montserrat", sans-serif; font-weight: 700; font-size: 2.15rem; letter-spacing: 0; line-height: .95;
+  background: linear-gradient(180deg, #2f8be6, #0a4fb8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.logo__txt b i { color: #4cb82e; -webkit-text-fill-color: #4cb82e; }
+.logo__txt small { font-family: "Oswald", sans-serif; font-weight: 700; color: #4cb82e; letter-spacing: .06em; font-size: .72rem; }
+.logo--light { background: #fff; padding: 6px 14px; border-radius: 14px; }
+.logo--light .logo__txt b { color: transparent; }
+.logo--light .logo__txt small { color: #4cb82e; }
+.logo--light:has(.logo__img) { background: none; padding: 0; }

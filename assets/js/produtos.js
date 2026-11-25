@@ -2,7 +2,7 @@
 //  CATÁLOGO DE PRODUTOS — OKB DISTRIBUIDORA
 //  Para adicionar um produto, copie uma linha P(...)
 //  P(nome, marca, categoria, { img, top, destaque, desc })
-//   - img: caminho da foto em assets/img/produtos/
+//   - foto: cadastre em assets/js/fotos.js ("Nome do produto": "assets/img/produtos/arquivo.webp")
 //   - top: true  -> aparece em "Mais vendidos"
 //   - destaque: true -> aparece na vitrine de destaques
 //   - desc: descrição do produto
@@ -23,54 +23,55 @@ window.OKB_CATEGORIAS = [
 
 (function () {
   const L = [];
-  const P = (n, m, c, x = {}) => L.push({ nome: n, marca: m, cat: c, ...x });
-  const IMG = "assets/img/produtos/";
+  const F = window.OKB_FOTOS || {};
+  const P = (n, m, c, x = {}) => L.push({ nome: n, marca: m, cat: c, img: F[n + "|" + m] || F[n], ...x });
 
-  // ---------- DESTAQUES (com foto) ----------
-  P("Seven Detergente Máq. Max 5 L", "Sevengel", "cozinha", { img: IMG + "seven-detergente-maq.jpg", top: true, destaque: true,
+
+  // ---------- DESTAQUES ----------
+  P("Seven Detergente Máq. Max 5 L", "Sevengel", "cozinha", { top: true, destaque: true,
     desc: "Detergente para máquinas de lavar louças. Limpeza eficiente e alto poder desengordurante, com resultados superiores. Ideal para cozinhas industriais, restaurantes e indústria alimentícia." });
-  P("Seven Free Desengordurante 5 L", "Sevengel", "cozinha", { img: IMG + "seven-free.jpg", destaque: true,
+  P("Seven Free Desengordurante 5 L", "Sevengel", "cozinha", { destaque: true,
     desc: "Detergente desengordurante com alto poder de limpeza para ambientes profissionais. Baixa toxicidade e odor, limpeza profunda e eficiente. Ideal para indústrias, cozinhas e frigoríficos." });
-  P("Seven Free Amoniacal 5 L", "Sevengel", "cozinha", { img: IMG + "seven-free.jpg", top: true,
+  P("Seven Free Amoniacal 5 L", "Sevengel", "cozinha", { top: true,
     desc: "Versão amoniacal do Seven Free: alto poder desengordurante para remoção de gorduras pesadas em pisos, equipamentos e superfícies." });
-  P("Seven Free Amoniacal 1 L", "Sevengel", "cozinha", { img: IMG + "seven-free.jpg" });
-  P("Free 1 L", "Sevengel", "cozinha", { img: IMG + "seven-free.jpg" });
-  P("Fibra de Limpeza Leve Azul", "Bettanin", "utensilios", { img: IMG + "fibras-limpeza.jpg", top: true, destaque: true,
+  P("Seven Free Amoniacal 1 L", "Sevengel", "cozinha", {});
+  P("Free 1 L", "Sevengel", "cozinha", {});
+  P("Fibra de Limpeza Leve Azul", "Bettanin", "utensilios", { top: true, destaque: true,
     desc: "Fibras de limpeza com qualidade e eficiência para o dia a dia. Pacote com 10 unidades (26 x 10,2 cm). Alta resistência, ideal para diversas superfícies." });
-  P("Fibra Limpeza Leve Branca", "Bettanin", "utensilios", { img: IMG + "fibras-limpeza.jpg",
+  P("Fibra Limpeza Leve Branca", "Bettanin", "utensilios", {
     desc: "Fibra branca para limpeza leve de superfícies delicadas. Pacote com 10 unidades." });
-  P("Fibra Limpeza Pesada Verde", "Bettanin", "utensilios", { img: IMG + "fibras-limpeza.jpg", top: true,
+  P("Fibra Limpeza Pesada Verde", "Bettanin", "utensilios", { top: true,
     desc: "Fibra verde para limpeza pesada. Alta resistência e durabilidade." });
-  P("Fibra Uso Geral Verde", "Bettanin", "utensilios", { img: IMG + "fibras-limpeza.jpg" });
-  P("Seven Clearon S.E. 5 L", "Sevengel", "desinf", { img: IMG + "clearon.jpg", destaque: true,
+  P("Fibra Uso Geral Verde", "Bettanin", "utensilios", {});
+  P("Seven Clearon S.E. 5 L", "Sevengel", "desinf", { destaque: true,
     desc: "Desinfetante e desengordurante para ambientes e superfícies alimentícias. Desinfecção com eficiência, remove gorduras e sujeiras. Ambientes mais seguros para você e seus clientes." });
-  P("Seven Clearon S.E. 1 L", "Sevengel", "desinf", { img: IMG + "clearon.jpg" });
-  P("Seven Clearon CL 5 L", "Sevengel", "desinf", { img: IMG + "clearon.jpg",
+  P("Seven Clearon S.E. 1 L", "Sevengel", "desinf", {});
+  P("Seven Clearon CL 5 L", "Sevengel", "desinf", {
     desc: "Desinfetante clorado da linha Clearon para superfícies e ambientes que exigem alto nível de higienização." });
-  P("Seven Clearon CL 1 L", "Sevengel", "desinf", { img: IMG + "clearon.jpg" });
-  P("Sanit Clor BD 1 kg", "Sevengel", "desinf", { img: IMG + "sanit-clor.jpg", destaque: true,
+  P("Seven Clearon CL 1 L", "Sevengel", "desinf", {});
+  P("Sanit Clor BD 1 kg", "Sevengel", "desinf", { destaque: true,
     desc: "Desinfecção completa com tripla ação: desinfecção de frutas, legumes e verduras; de água para consumo; e de superfícies e equipamentos em geral." });
-  P("Sanit Clor Sachê 4 g", "Sevengel", "desinf", { img: IMG + "sanit-clor.jpg" });
-  P("Seven Geleia de Pinho Industrial 5 L", "Sevengel", "limpeza", { img: IMG + "geleia-pinho.jpg", destaque: true,
+  P("Sanit Clor Sachê 4 g", "Sevengel", "desinf", {});
+  P("Seven Geleia de Pinho Industrial 5 L", "Sevengel", "limpeza", { destaque: true,
     desc: "Limpeza profunda e desodorizante com óleo essencial de pinho. Excelente poder de limpeza e perfume duradouro. Ideal para escolas, universidades, hospitais e supermercados." });
-  P("Seven Geleia de Pinho Industrial 1 L", "Sevengel", "limpeza", { img: IMG + "geleia-pinho.jpg" });
-  P("Seven Geleia de Pinho 5 L", "Sevengel", "limpeza", { img: IMG + "geleia-pinho.jpg" });
-  P("Seven Geleia de Pinho 1 L", "Sevengel", "limpeza", { img: IMG + "geleia-pinho.jpg" });
-  P("Seven Flotador Industrial 5 L", "Sevengel", "cozinha", { img: IMG + "seven-flotador.jpg", destaque: true,
+  P("Seven Geleia de Pinho Industrial 1 L", "Sevengel", "limpeza", {});
+  P("Seven Geleia de Pinho 5 L", "Sevengel", "limpeza", {});
+  P("Seven Geleia de Pinho 1 L", "Sevengel", "limpeza", {});
+  P("Seven Flotador Industrial 5 L", "Sevengel", "cozinha", { destaque: true,
     desc: "Solvente vegetal para uma limpeza eficiente e sustentável. Tecnologia de flotação que remove gorduras com máxima eficiência. Ideal para equipamentos, pisos, paredes e coifas." });
-  P("Seven Flotador Industrial 1 L", "Sevengel", "cozinha", { img: IMG + "seven-flotador.jpg" });
-  P("Lim+ Limpador Multiuso Álcool/Floral 5 L", "Sevengel", "limpeza", { img: IMG + "limmais-multiuso.jpg", top: true, destaque: true,
+  P("Seven Flotador Industrial 1 L", "Sevengel", "cozinha", {});
+  P("Lim+ Limpador Multiuso Álcool/Floral 5 L", "Sevengel", "limpeza", { top: true, destaque: true,
     desc: "Limpador multiuso com álcool e perfume floral. Limpeza rápida, secagem rápida e perfume agradável. Limpeza completa sem complicação." });
-  P("Lim+ Limpador Multiuso Álcool/Floral 1 L", "Sevengel", "limpeza", { img: IMG + "limmais-multiuso.jpg" });
-  P("Lim+ Grill 5 L", "Sevengel", "cozinha", { img: IMG + "limmais-grill.jpg", top: true, destaque: true,
+  P("Lim+ Limpador Multiuso Álcool/Floral 1 L", "Sevengel", "limpeza", {});
+  P("Lim+ Grill 5 L", "Sevengel", "cozinha", { top: true, destaque: true,
     desc: "Limpador desengordurante para grelhas, chapas, fornos e coifas. Remove gordura e resíduos carbonizados. Mais limpeza e praticidade na sua rotina. Disponível em 1 L e 5 L." });
-  P("Lim+ Grill 1 L", "Sevengel", "cozinha", { img: IMG + "limmais-grill.jpg" });
-  P("Seven Peroxi 3000 5 L", "Sevengel", "limpeza", { img: IMG + "peroxy-3000.jpg", destaque: true,
+  P("Lim+ Grill 1 L", "Sevengel", "cozinha", {});
+  P("Seven Peroxi 3000 5 L", "Sevengel", "limpeza", { destaque: true,
     desc: "Limpador de uso geral à base de peróxido de hidrogênio. Limpeza, controle de odores e alvejamento em um só produto. Mais limpeza, mais segurança para o seu negócio." });
-  P("Seven Peroxi 3000 1 L", "Sevengel", "limpeza", { img: IMG + "peroxy-3000.jpg" });
-  P("Seven Porcelan 1 L", "Sevengel", "limpeza", { img: IMG + "seven-porcelan.jpg", destaque: true,
+  P("Seven Peroxi 3000 1 L", "Sevengel", "limpeza", {});
+  P("Seven Porcelan 1 L", "Sevengel", "limpeza", { destaque: true,
     desc: "Limpador neutro para porcelanatos e pisos finos. Limpeza completa e segura, fórmula biodegradável, não deixa resíduos e realça o brilho." });
-  P("Seven Peroxy Guard", "Sevengel", "desinf", { img: IMG + "peroxy-guard.jpg", destaque: true,
+  P("Seven Peroxy Guard", "Sevengel", "desinf", { destaque: true,
     desc: "Higienização para ambientes de saúde. Ação eficaz com peróxido, ideal para hospitais, clínicas e consultórios." });
 
   // ---------- LIMPEZA GERAL ----------
@@ -406,8 +407,8 @@ window.OKB_CATEGORIAS = [
   P("Amaciante Soft White 5 L", "Dvisão", "lavanderia");
 
   // ---------- AROMATIZANTES ----------
-  P("Seven Soft Aroma Pro Flowers 1 L", "Sevengel", "aroma");
-  P("Seven Soft Aroma Pro Flowers 5 L", "Sevengel", "aroma");
+  P("Seven Soft Aroma Pro Flowers 1 L", "Sevengel", "lavanderia", { desc: "Amaciante concentrado com cápsulas de fragrância. Alto poder amaciante e perfume duradouro." });
+  P("Seven Soft Aroma Pro Flowers 5 L", "Sevengel", "lavanderia");
   P("Perfume Sensações Brisa 60 ml", "Sevengel", "aroma");
   P("Perfume Sensações Doce 60 ml", "Sevengel", "aroma");
   P("Perfume Sensações Fofo 60 ml", "Sevengel", "aroma");
