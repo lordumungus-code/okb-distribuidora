@@ -50,7 +50,7 @@ Pronto: na página do repositório você deve ver `index.html`, `assets` e `READ
 
 O endereço fica assim: `https://SEU-USUARIO.github.io/okb-distribuidora/`. É esse link que você coloca no Facebook, no WhatsApp Business e manda pros clientes.
 
-Teste no celular: busque um produto, adicione ao orçamento e veja se o WhatsApp abre com a mensagem pronta para o (12) 99219-2346.
+Teste no celular: busque um produto, adicione ao orçamento e veja se o WhatsApp abre com a mensagem pronta para o (12) 99201-3447.
 
 ## Como mudar o site depois
 
